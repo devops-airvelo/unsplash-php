@@ -28,7 +28,7 @@ class Connection
      * @param Unsplash $provider OAuth2 provider object to interact with the Unsplash API
      * @param \League\OAuth2\Client\Token\AccessToken|null $token Token information if one already exists for the user
      */
-    public function __construct(Unsplash $provider, AccessToken $token = null)
+    public function __construct(Unsplash $provider, ?AccessToken $token = null)
     {
         $this->provider = $provider;
         $this->token = $token;
